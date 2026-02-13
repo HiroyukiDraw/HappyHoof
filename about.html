@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Joshua Macaraig</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg-main:#CFE8D5;
+  --bg-soft:#E6F4EC;
+  --primary:#1E6F3D;
+  --accent:#3FAF6C;
+  --dark:#14532d;
+}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  color:var(--primary);
+  background:var(--bg-main);
+  overflow-x:hidden;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:20px 0;
+  background:var(--bg-soft);
+  z-index:1000;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+nav a{
+  text-decoration:none;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.1rem;
+  letter-spacing:3px;
+  padding:10px 25px;
+  border:2px solid var(--primary);
+  color:var(--primary);
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:var(--primary);
+  color:#fff;
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(30,111,61,0.4);
+}
+
+/* HERO SECTION */
+.hero{
+  margin-top:120px;
+  padding:6rem 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:linear-gradient(120deg,var(--bg-main) 55%, var(--accent) 55%);
+}
+
+.hero-left h1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(4rem,7vw,7rem);
+  letter-spacing:6px;
+  color:var(--dark);
+  line-height:0.95;
+}
+
+.alias{
+  font-size:0.35em;
+  color:var(--primary);
+}
+
+.hero-left h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.5rem,3vw,2.5rem);
+  margin-top:1rem;
+  color:var(--primary);
+}
+
+.hero-right img{
+  width:100%;
+  max-width:500px;
+  filter:drop-shadow(0 30px 50px rgba(0,0,0,0.25));
+}
+
+/* SECTION */
+.section{
+  padding:5rem 8%;
+  background:var(--bg-soft);
+}
+
+.card{
+  background:#fff;
+  padding:2rem;
+  border-left:6px solid var(--accent);
+  margin-bottom:2rem;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.8rem;
+  letter-spacing:3px;
+  margin-bottom:1rem;
+  color:var(--primary);
+}
+
+.card p{
+  font-size:1.1rem;
+  line-height:1.8;
+  font-weight:600;
+  color:#333;
+}
+
+/* COLLAPSIBLE */
+details{
+  margin-bottom:2rem;
+  border:2px solid var(--primary);
+  padding:1.5rem 2rem;
+  background:#fff;
+}
+
+details p{
+  font-size:1.1rem;
+  font-weight:600;
+  line-height:1.9;
+  color:#333;
+}
+
+summary{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.5rem;
+  letter-spacing:3px;
+  cursor:pointer;
+  color:var(--primary);
+}
+
+/* PROGRESS BAR */
+.skill{
+  margin:1.5rem 0;
+}
+
+.skill-name{
+  font-weight:700;
+  margin-bottom:0.5rem;
+}
+
+.bar{
+  width:100%;
+  background:#ddd;
+  height:15px;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.bar-fill{
+  height:100%;
+  background:var(--accent);
+}
+
+/* SIGNATURE */
+.signature{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:2.5rem;
+  padding:4rem 0;
+  color:var(--primary);
+  background:var(--bg-main);
+}
+
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    background:var(--bg-main);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="works.html">WORKS</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>
+      JOSHUA <span class="alias">(Hiroyuki)</span><br>
+      V. MACARAIG
+    </h1>
+    <h2>Creative Art Student, ScriptWriter<br>
+      Visual Designer</h2>
+  </div>
+  <div class="hero-right">
+    <img src="Juswa.jpg" alt="Hiroyuki">
+  </div>
+</section>
+
+<section class="section">
+
+  <div class="card">
+    <h3>ABOUT ME</h3>
+    <p>
+      I am a passionate art student focused on bold visuals, strong storytelling, and creative design execution.
+    </p>
+  </div>
+
+  <details>
+    <summary>HARD SKILLS</summary>
+    <p>
+      • Digital Illustration<br>
+      • Character Design<br>
+      • Video Editing<br>
+      • Traditional Drawing<br>
+      • Script Writing<br>
+      • Crafting
+    </p>
+  </details>
+
+  <details>
+    <summary>TOOLS</summary>
+    <p>
+      • Ibis PaintX<br>
+      • Capcut<br>
+      • Figma<br>
+      • Canva
+    </p>
+  </details>
+
+  <div class="card">
+    <h3>SOFT SKILLS</h3>
+
+    <div class="skill">
+      <div class="skill-name">Leadership - 88%</div>
+      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Emotional Intelligence - 96%</div>
+      <div class="bar"><div class="bar-fill" style="width:96%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Creativity - 88%</div>
+      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Teamwork - 94%</div>
+      <div class="bar"><div class="bar-fill" style="width:94%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Time Management - 93%</div>
+      <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Written Communication - 94%</div>
+      <div class="bar"><div class="bar-fill" style="width:94%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Multitasking - 84%</div>
+      <div class="bar"><div class="bar-fill" style="width:84%"></div></div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="signature">— Joshua (Hiroyuki)</div>
+
+</body>
+</html>
