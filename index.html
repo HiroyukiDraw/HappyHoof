@@ -8,7 +8,6 @@
 
   <style>
     :root {
-      --bg-color: #CFE8D5;
       --primary: #1E6F3D;
       --accent: #3FAF6C;
     }
@@ -20,44 +19,49 @@
     }
 
     body {
-      background: var(--bg-color);
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+
+      /* ✨ Soft gradient background */
+      background: linear-gradient(135deg, #CFE8D5, #B7DFC8);
       position: relative;
     }
 
-    /* ☁ CLOUD BACKGROUND SHAPES */
-    .cloud {
+    /* ✨ Abstract Background Shapes */
+    .shape {
       position: absolute;
-      background: white;
       border-radius: 50%;
-      opacity: 0.15; /* low opacity */
-      filter: blur(10px);
+      opacity: 0.2;
+      filter: blur(60px);
       z-index: 0;
     }
 
-    .cloud1 {
-      width: 300px;
-      height: 150px;
-      top: 10%;
-      left: 5%;
+    .shape1 {
+      width: 600px;
+      height: 600px;
+      background: #3FAF6C;
+      top: -150px;
+      left: -150px;
     }
 
-    .cloud2 {
+    .shape2 {
+      width: 500px;
+      height: 500px;
+      background: #1E6F3D;
+      bottom: -200px;
+      right: -150px;
+    }
+
+    .shape3 {
       width: 400px;
-      height: 200px;
-      bottom: 10%;
-      right: 8%;
-    }
-
-    .cloud3 {
-      width: 250px;
-      height: 130px;
-      top: 60%;
-      left: 35%;
+      height: 400px;
+      background: #ffffff;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
     }
 
     .container {
@@ -66,7 +70,7 @@
       justify-content: space-between;
       width: 90%;
       position: relative;
-      z-index: 1; /* above clouds */
+      z-index: 1;
     }
 
     .left {
@@ -76,14 +80,14 @@
     }
 
     .left img {
-      width: 800px;
+      width: 820px;
       max-width: 100%;
-      filter: drop-shadow(0px 50px 80px rgba(0, 0, 0, 0.28));
+      filter: drop-shadow(0px 50px 90px rgba(0, 0, 0, 0.3));
     }
 
     .right {
       flex: 1;
-      padding-left: 70px;
+      padding-left: 80px;
     }
 
     .welcome {
@@ -95,7 +99,7 @@
 
     .studio {
       font-family: 'Fredoka', sans-serif;
-      font-size: 95px;
+      font-size: 100px;
       font-weight: 700;
       color: var(--primary);
       line-height: 1.05;
@@ -103,9 +107,9 @@
 
     .portfolio {
       font-family: 'Montserrat', sans-serif;
-      font-size: 110px;
+      font-size: 115px;
       font-weight: 900;
-      letter-spacing: 5px;
+      letter-spacing: 6px;
       color: var(--accent);
       margin-top: 15px;
     }
@@ -145,7 +149,7 @@
       }
 
       .portfolio {
-        font-size: 60px;
+        font-size: 65px;
       }
 
       .welcome {
@@ -161,10 +165,10 @@
 </head>
 <body>
 
-  <!-- Background Clouds -->
-  <div class="cloud cloud1"></div>
-  <div class="cloud cloud2"></div>
-  <div class="cloud cloud3"></div>
+  <!-- ✨ Abstract Background Shapes -->
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
 
   <div class="container">
 
