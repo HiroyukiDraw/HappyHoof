@@ -4,14 +4,13 @@
   <title>Happy Hoof Studio | Home</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --bg-color: #CFE8D5;
       --primary: #1E6F3D;
       --accent: #3FAF6C;
-      --white: #ffffff;
     }
 
     * {
@@ -26,6 +25,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     .container {
@@ -42,48 +42,48 @@
     }
 
     .left img {
-      width: 780px; /* 🔥 Bigger than before */
+      width: 800px;
       max-width: 100%;
-      filter: drop-shadow(0px 45px 70px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(0px 50px 80px rgba(0, 0, 0, 0.28));
     }
 
     .right {
       flex: 1;
-      padding-left: 60px;
+      padding-left: 70px;
     }
 
     .welcome {
       font-family: 'Fredoka', sans-serif;
-      font-size: 28px;
+      font-size: 40px;
       color: var(--primary);
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .studio {
       font-family: 'Fredoka', sans-serif;
-      font-size: 65px;
-      font-weight: 600;
+      font-size: 95px;   /* 🔥 MUCH BIGGER */
+      font-weight: 700;
       color: var(--primary);
-      line-height: 1.1;
+      line-height: 1.05;
     }
 
     .portfolio {
       font-family: 'Montserrat', sans-serif;
-      font-size: 75px;
+      font-size: 110px;  /* 🔥 MASSIVE */
       font-weight: 900;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
       color: var(--accent);
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 40px;
-      padding: 18px 55px;
-      font-size: 20px;
+      margin-top: 50px;
+      padding: 20px 60px;
+      font-size: 22px;
       background: var(--primary);
       color: white;
-      border-radius: 50px;
+      border-radius: 60px;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
@@ -92,10 +92,24 @@
 
     .btn:hover {
       background: var(--accent);
-      transform: scale(1.05);
+      transform: scale(1.07);
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 1200px) {
+      .studio {
+        font-size: 65px;
+      }
+
+      .portfolio {
+        font-size: 75px;
+      }
+
+      .left img {
+        width: 550px;
+      }
+    }
+
+    @media(max-width: 900px) {
       .container {
         flex-direction: column;
         text-align: center;
@@ -103,19 +117,19 @@
 
       .right {
         padding-left: 0;
-        margin-top: 30px;
-      }
-
-      .left img {
-        width: 500px;
+        margin-top: 40px;
       }
 
       .studio {
-        font-size: 45px;
+        font-size: 55px;
       }
 
       .portfolio {
-        font-size: 50px;
+        font-size: 60px;
+      }
+
+      .welcome {
+        font-size: 28px;
       }
     }
 
@@ -126,12 +140,11 @@
   <div class="container">
 
     <div class="left">
-      <!-- Replace Hap.png with your PNG filename -->
       <img src="Haphap.png" alt="Happy Hoof Studio Logo">
     </div>
 
     <div class="right">
-      <div class="welcome">Welcome To</div>
+      <div class="welcome">WELCOME TO</div>
 
       <div class="studio">
         HAPPY HOOF STUDIO
