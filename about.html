@@ -3,25 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me - Joshua Macaraig</title>
+<title>About Me - Hiroyuki</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
-:root{
-  --bg-main:#CFE8D5;
-  --bg-soft:#E6F4EC;
-  --primary:#1E6F3D;
-  --accent:#3FAF6C;
-  --dark:#14532d;
-}
-
 body{
   font-family:'Montserrat',sans-serif;
-  color:var(--primary);
-  background:var(--bg-main);
+  color:#e6e6e6; /* softer white */
+  background:#0f0f0f; /* softer black */
   overflow-x:hidden;
 }
 
@@ -34,9 +26,8 @@ nav{
   justify-content:center;
   gap:25px;
   padding:20px 0;
-  background:var(--bg-soft);
+  background:#0f0f0f;
   z-index:1000;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 nav a{
@@ -45,16 +36,16 @@ nav a{
   font-size:1.1rem;
   letter-spacing:3px;
   padding:10px 25px;
-  border:2px solid var(--primary);
-  color:var(--primary);
+  border:2px solid #d4a017; /* darker gold */
+  color:#d4a017;
   transition:0.3s;
 }
 
 nav a:hover{
-  background:var(--primary);
-  color:#fff;
+  background:#d4a017;
+  color:#0f0f0f;
   transform:translateY(-5px);
-  box-shadow:0 0 20px rgba(30,111,61,0.4);
+  box-shadow:0 0 15px rgba(212,160,23,0.6);
 }
 
 /* HERO SECTION */
@@ -64,47 +55,44 @@ nav a:hover{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background:linear-gradient(120deg,var(--bg-main) 55%, var(--accent) 55%);
+  background:linear-gradient(120deg,#0f0f0f 55%, #b8860b 55%);
 }
 
 .hero-left h1{
   font-family:'Bebas Neue',sans-serif;
   font-size:clamp(4rem,7vw,7rem);
   letter-spacing:6px;
-  color:var(--dark);
+  color:#d4a017;
   line-height:0.95;
 }
 
 .alias{
   font-size:0.35em;
-  color:var(--primary);
+  color:#cccccc;
 }
 
 .hero-left h2{
   font-family:'Playfair Display',serif;
   font-size:clamp(1.5rem,3vw,2.5rem);
   margin-top:1rem;
-  color:var(--primary);
+  color:#e6e6e6;
 }
 
 .hero-right img{
   width:100%;
   max-width:500px;
-  filter:drop-shadow(0 30px 50px rgba(0,0,0,0.25));
 }
 
-/* SECTION */
 .section{
   padding:5rem 8%;
-  background:var(--bg-soft);
+  background:#141414;
 }
 
 .card{
-  background:#fff;
+  background:#111;
   padding:2rem;
-  border-left:6px solid var(--accent);
+  border-left:6px solid #d4a017;
   margin-bottom:2rem;
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
 }
 
 .card h3{
@@ -112,29 +100,29 @@ nav a:hover{
   font-size:1.8rem;
   letter-spacing:3px;
   margin-bottom:1rem;
-  color:var(--primary);
+  color:#d4a017;
 }
 
 .card p{
-  font-size:1.1rem;
-  line-height:1.8;
+  font-size:1.2rem;
+  line-height:1.9;
   font-weight:600;
-  color:#333;
+  color:#dddddd;
 }
 
 /* COLLAPSIBLE */
 details{
   margin-bottom:2rem;
-  border:2px solid var(--primary);
+  border:2px solid #d4a017;
   padding:1.5rem 2rem;
-  background:#fff;
+  background:#111;
 }
 
 details p{
-  font-size:1.1rem;
-  font-weight:600;
-  line-height:1.9;
-  color:#333;
+  font-size:1.35rem;
+  font-weight:700;
+  line-height:2.1;
+  color:#e6e6e6;
 }
 
 summary{
@@ -142,7 +130,7 @@ summary{
   font-size:1.5rem;
   letter-spacing:3px;
   cursor:pointer;
-  color:var(--primary);
+  color:#d4a017;
 }
 
 /* PROGRESS BAR */
@@ -153,11 +141,12 @@ summary{
 .skill-name{
   font-weight:700;
   margin-bottom:0.5rem;
+  color:#e6e6e6;
 }
 
 .bar{
   width:100%;
-  background:#ddd;
+  background:#222;
   height:15px;
   border-radius:20px;
   overflow:hidden;
@@ -165,7 +154,7 @@ summary{
 
 .bar-fill{
   height:100%;
-  background:var(--accent);
+  background:#d4a017;
 }
 
 /* SIGNATURE */
@@ -174,18 +163,17 @@ summary{
   font-family:'Playfair Display',serif;
   font-size:2.5rem;
   padding:4rem 0;
-  color:var(--primary);
-  background:var(--bg-main);
+  color:#d4a017;
+  background:#0f0f0f;
 }
 
 @media(max-width:900px){
   .hero{
     flex-direction:column;
     text-align:center;
-    background:var(--bg-main);
+    background:#0f0f0f;
   }
 }
-
 </style>
 </head>
 
@@ -221,7 +209,7 @@ summary{
     </p>
   </div>
 
-  <details>
+ <details>
     <summary>HARD SKILLS</summary>
     <p>
       • Digital Illustration<br>
@@ -242,7 +230,7 @@ summary{
       • Canva
     </p>
   </details>
-
+  
   <div class="card">
     <h3>SOFT SKILLS</h3>
 
