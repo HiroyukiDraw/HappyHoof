@@ -12,8 +12,8 @@
 
 body{
   font-family:'Montserrat',sans-serif;
-  color:#e6e6e6; /* softer white */
-  background:#0f0f0f; /* softer black */
+  color:#e0e0e0; /* softer white */
+  background:#000;
   overflow-x:hidden;
 }
 
@@ -26,7 +26,7 @@ nav{
   justify-content:center;
   gap:25px;
   padding:20px 0;
-  background:#0f0f0f;
+  background:#000;
   z-index:1000;
 }
 
@@ -36,16 +36,16 @@ nav a{
   font-size:1.1rem;
   letter-spacing:3px;
   padding:10px 25px;
-  border:2px solid #d4a017; /* darker gold */
-  color:#d4a017;
+  border:2px solid #ffcc00;
+  color:#ffcc00;
   transition:0.3s;
 }
 
 nav a:hover{
-  background:#d4a017;
-  color:#0f0f0f;
+  background:#ffcc00;
+  color:#000;
   transform:translateY(-5px);
-  box-shadow:0 0 15px rgba(212,160,23,0.6);
+  box-shadow:0 0 15px rgba(255,204,0,0.6);
 }
 
 /* HERO SECTION */
@@ -55,27 +55,27 @@ nav a:hover{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background:linear-gradient(120deg,#0f0f0f 55%, #b8860b 55%);
+  background:linear-gradient(120deg,#000 55%, #ffcc00 55%);
 }
 
 .hero-left h1{
   font-family:'Bebas Neue',sans-serif;
   font-size:clamp(4rem,7vw,7rem);
   letter-spacing:6px;
-  color:#d4a017;
+  color:#ffcc00;
   line-height:0.95;
 }
 
 .alias{
   font-size:0.35em;
-  color:#cccccc;
+  color:#cfcfcf; /* darker white */
 }
 
 .hero-left h2{
   font-family:'Playfair Display',serif;
   font-size:clamp(1.5rem,3vw,2.5rem);
   margin-top:1rem;
-  color:#e6e6e6;
+  color:#e0e0e0;
 }
 
 .hero-right img{
@@ -85,13 +85,13 @@ nav a:hover{
 
 .section{
   padding:5rem 8%;
-  background:#141414;
+  background:#111;
 }
 
 .card{
-  background:#111;
+  background:#000;
   padding:2rem;
-  border-left:6px solid #d4a017;
+  border-left:6px solid #ffcc00;
   margin-bottom:2rem;
 }
 
@@ -100,29 +100,29 @@ nav a:hover{
   font-size:1.8rem;
   letter-spacing:3px;
   margin-bottom:1rem;
-  color:#d4a017;
+  color:#ffcc00;
 }
 
 .card p{
   font-size:1.2rem;
   line-height:1.9;
   font-weight:600;
-  color:#dddddd;
+  color:#d9d9d9;
 }
 
 /* COLLAPSIBLE */
 details{
   margin-bottom:2rem;
-  border:2px solid #d4a017;
+  border:2px solid #ffcc00;
   padding:1.5rem 2rem;
-  background:#111;
+  background:#000;
 }
 
 details p{
   font-size:1.35rem;
   font-weight:700;
   line-height:2.1;
-  color:#e6e6e6;
+  color:#e0e0e0;
 }
 
 summary{
@@ -130,7 +130,7 @@ summary{
   font-size:1.5rem;
   letter-spacing:3px;
   cursor:pointer;
-  color:#d4a017;
+  color:#ffcc00;
 }
 
 /* PROGRESS BAR */
@@ -141,7 +141,7 @@ summary{
 .skill-name{
   font-weight:700;
   margin-bottom:0.5rem;
-  color:#e6e6e6;
+  color:#e0e0e0;
 }
 
 .bar{
@@ -154,7 +154,7 @@ summary{
 
 .bar-fill{
   height:100%;
-  background:#d4a017;
+  background:#ffcc00;
 }
 
 /* SIGNATURE */
@@ -163,15 +163,15 @@ summary{
   font-family:'Playfair Display',serif;
   font-size:2.5rem;
   padding:4rem 0;
-  color:#d4a017;
-  background:#0f0f0f;
+  color:#ffcc00;
+  background:#000;
 }
 
 @media(max-width:900px){
   .hero{
     flex-direction:column;
     text-align:center;
-    background:#0f0f0f;
+    background:#000;
   }
 }
 </style>
