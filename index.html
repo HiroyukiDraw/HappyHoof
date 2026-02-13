@@ -26,6 +26,38 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      position: relative;
+    }
+
+    /* ☁ CLOUD BACKGROUND SHAPES */
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.15; /* low opacity */
+      filter: blur(10px);
+      z-index: 0;
+    }
+
+    .cloud1 {
+      width: 300px;
+      height: 150px;
+      top: 10%;
+      left: 5%;
+    }
+
+    .cloud2 {
+      width: 400px;
+      height: 200px;
+      bottom: 10%;
+      right: 8%;
+    }
+
+    .cloud3 {
+      width: 250px;
+      height: 130px;
+      top: 60%;
+      left: 35%;
     }
 
     .container {
@@ -33,6 +65,8 @@
       align-items: center;
       justify-content: space-between;
       width: 90%;
+      position: relative;
+      z-index: 1; /* above clouds */
     }
 
     .left {
@@ -61,7 +95,7 @@
 
     .studio {
       font-family: 'Fredoka', sans-serif;
-      font-size: 95px;   /* 🔥 MUCH BIGGER */
+      font-size: 95px;
       font-weight: 700;
       color: var(--primary);
       line-height: 1.05;
@@ -69,7 +103,7 @@
 
     .portfolio {
       font-family: 'Montserrat', sans-serif;
-      font-size: 110px;  /* 🔥 MASSIVE */
+      font-size: 110px;
       font-weight: 900;
       letter-spacing: 5px;
       color: var(--accent);
@@ -95,20 +129,6 @@
       transform: scale(1.07);
     }
 
-    @media(max-width: 1200px) {
-      .studio {
-        font-size: 65px;
-      }
-
-      .portfolio {
-        font-size: 75px;
-      }
-
-      .left img {
-        width: 550px;
-      }
-    }
-
     @media(max-width: 900px) {
       .container {
         flex-direction: column;
@@ -131,11 +151,20 @@
       .welcome {
         font-size: 28px;
       }
+
+      .left img {
+        width: 500px;
+      }
     }
 
   </style>
 </head>
 <body>
+
+  <!-- Background Clouds -->
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
 
   <div class="container">
 
