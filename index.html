@@ -19,84 +19,111 @@
     }
 
     body {
-      background-color: var(--bg-color);
-      color: var(--primary);
-    }
-
-    header {
-      background: var(--white);
-      padding: 15px 50px;
+      background: var(--bg-color);
+      height: 100vh;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: center;
     }
 
-    nav a {
-      text-decoration: none;
-      color: var(--primary);
-      margin-left: 20px;
-      font-weight: 500;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
     }
 
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      padding: 100px 50px;
+    .left {
+      flex: 1;
       text-align: center;
     }
 
+    .left img {
+      width: 500px;
+      animation: float 4s ease-in-out infinite;
+      filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.15));
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .right {
+      flex: 1;
+      padding-left: 50px;
+    }
+
     h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 60px;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    .highlight {
+      color: var(--accent);
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 18px;
       background: var(--primary);
-      color: var(--white);
-      border-radius: 30px;
+      color: white;
+      border-radius: 40px;
       text-decoration: none;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: var(--accent);
+      transform: scale(1.05);
     }
 
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+    @media(max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right {
+        padding-left: 0;
+        margin-top: 30px;
+      }
+
+      .left img {
+        width: 350px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
     }
+
   </style>
-
 </head>
 <body>
 
-<header>
-  <h2>Happy Hoof Studio</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="works.html">Works</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <div class="container">
 
-<section>
-  <h1>Welcome to Happy Hoof Studio</h1>
-  <p>Handmade with love. Creative digital art and design portfolio.</p>
-  <a href="works.html" class="btn">View My Works</a>
-</section>
+    <div class="left">
+      <!-- Replace Hap.png with your image file name -->
+      <img src="Hap.png" alt="Happy Hoof Studio Logo">
+    </div>
 
-<footer>
-  © 2026 Happy Hoof Studio | By Juswa & Beng
-</footer>
+    <div class="right">
+      <h1>
+        Welcome To<br>
+        <span class="highlight">HAPPY HOOF STUDIO'S</span><br>
+        PORTFOLIO
+      </h1>
+
+      <a href="about.html" class="btn">ENTER</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
